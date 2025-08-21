@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Mini Project</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#todo">To-Do</a>
+  </nav>
+
+  <div class="grid-container">
+    <!-- Main Content -->
+    <div class="content">
+      <h2 id="contact">Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2 id="todo">To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
